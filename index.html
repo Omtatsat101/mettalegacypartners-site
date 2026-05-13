@@ -11,6 +11,14 @@
 <meta property="og:url" content="https://mettalegacypartners.com" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231a3a2a'/%3E%3Ctext y='46' x='32' font-size='38' font-family='Georgia' fill='%23b8860b' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
 <link rel="stylesheet" href="style.css" />
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-383FDKRG70"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-383FDKRG70', { send_page_view: true });
+</script>
 </head>
 <body>
 
@@ -171,9 +179,7 @@
     <section class="subsection" id="contact-card">
       <div class="container narrow reveal">
 
-        <form id="contact-form" class="cm-form-inline"
-              action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_KEY_LEGACY" />
+        <form id="contact-form" class="cm-form-inline" method="POST">
           <input type="hidden" name="subject" value="mettalegacypartners.com — new inquiry" />
           <input type="hidden" name="from_name" value="mettalegacypartners.com" />
           <input type="checkbox" name="botcheck" class="cm-honeypot" tabindex="-1" autocomplete="off" />
@@ -228,6 +234,7 @@
   </div>
 </footer>
 
+<script src="config.js"></script>
 <script src="app.js" defer></script>
 </body>
 </html>
